@@ -1,0 +1,16 @@
+plugin.tx_trbceimage {
+	view {
+		templateRootPath = {$plugin.tx_trbceimage.view.templateRootPath}
+		partialRootPath = {$plugin.tx_trbceimage.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_trbceimage.view.layoutRootPath}
+	}
+}
+
+tt_content.image >
+tt_content.image = USER
+tt_content.image {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+	vendorName = TRB
+	extensionName = TrbCeImage
+	pluginName = image
+}
